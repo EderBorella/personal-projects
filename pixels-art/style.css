@@ -1,0 +1,51 @@
+
+#title{
+    font-weight: 900;
+}
+
+#color-palette{
+    color: black;
+    position: absolute;
+}
+
+.initial{
+    height: 50px;
+    width: 50px;
+    background-color: rgb(0,0,0);
+    float: left;
+    margin: 10px;
+    border: 1px black solid;
+}
+
+.a, .b, .c{
+    height: 50px;
+    width: 50px;
+    float: left;
+    margin: 10px;
+    border: 1px black solid;
+}
+
+#pixel-board{
+    display: inline-block;
+    top: 300px;
+    width: 250px;
+    position: absolute;
+    left: 5px;
+}
+
+.pixel {
+    height: 40px;
+    width: 40px;
+    border: 1px black solid;
+    float: left;
+    background-color: white;
+}
+#clear-board{
+    position: absolute;
+    top: 160px;
+    left: 100px;
+}
+#canvas-size{
+    position: relative;
+    top: 130px;
+}
