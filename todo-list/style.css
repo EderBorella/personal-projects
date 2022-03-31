@@ -1,0 +1,39 @@
+body{
+    background-color: antiquewhite;
+}
+header{
+    text-align: center;
+}
+ol{
+    list-style-position: inside;
+}
+.completed{
+    text-decoration: line-through solid black;
+}
+button{
+    margin-top: 5px;
+    border: 0;
+    background-color: rgb(68, 0, 0);
+    color: white;
+}
+#tasks-container{
+    text-align: center;
+    padding-left: 15%;    
+    padding-right: 15%;
+}
+#lista-tarefas{
+    background-color: rgb(39, 0, 0);
+    color: aliceblue;
+}
+#buttons-container{
+    text-align: center;
+}
+#salvar-tarefas{
+    background-color: rgb(155, 1, 1);
+}
+#mover-cima{
+    background-color: rgb(155, 1, 1);
+}
+#mover-baixo{
+    background-color: rgb(155, 1, 1);
+}
