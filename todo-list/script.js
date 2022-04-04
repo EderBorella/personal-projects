@@ -20,18 +20,23 @@ addTask.addEventListener('click', () => {
 });
 
 tasks.addEventListener('click', (event) => {
-  for (let i = 0; i < tasks.children.length; i += 1) {
-    tasks.children[i].style.background = '';
-    tasks.children[i].classList.remove('selected');
-  }
+
 
   if (event.target.classList.contains('selected')) {
+    for (let i = 0; i < tasks.children.length; i += 1) {
+      tasks.children[i].style.background = '';
+      tasks.children[i].classList.remove('selected');
+    }
     event.target.classList.remove('selected')
     event.target.style.background = '';
-  }else{
+  } else {
+    for (let i = 0; i < tasks.children.length; i += 1) {
+      tasks.children[i].style.background = '';
+      tasks.children[i].classList.remove('selected');
+    }
     event.target.classList.add('selected');
     event.target.style.background = 'gray';
-  };
+  }
 });
 
 tasks.addEventListener('dblclick', (event) => {
