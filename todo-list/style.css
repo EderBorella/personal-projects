@@ -1,39 +1,53 @@
-body{
-    background-color: antiquewhite;
+body {
+    background: antiquewhite;
 }
-header{
+header {
     text-align: center;
 }
-ol{
+ol {
     list-style-position: inside;
 }
-.completed{
+.completed {
     text-decoration: line-through solid black;
 }
-button{
-    margin-top: 5px;
-    border: 0;
-    background-color: rgb(68, 0, 0);
-    color: white;
-}
-#tasks-container{
+#tasks-container {
     text-align: center;
     padding-left: 15%;    
     padding-right: 15%;
 }
-#lista-tarefas{
-    background-color: rgb(39, 0, 0);
-    color: aliceblue;
+#lista-tarefas {
+    display: flex;
+    flex-flow: column;
+    padding-left: 0 !important;
+    min-height: 150px;
+    margin: 20px 0;
+    background: rgb(221, 221, 221);
+    box-shadow: 5px 5px 5px ;
 }
-#buttons-container{
-    text-align: center;
+#buttons-container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
 }
-#salvar-tarefas{
-    background-color: rgb(155, 1, 1);
+.buttonA {
+    padding: 5px 10px;
+    box-shadow: 2px 2px 5px;
+    border: 0;
+    border-radius: 5px;
+    margin: 7px 10px;
 }
-#mover-cima{
-    background-color: rgb(155, 1, 1);
+.buttonA:hover{
+    color: white;
+    background-color: rgb(61, 61, 61);
 }
-#mover-baixo{
-    background-color: rgb(155, 1, 1);
+.buttonB {
+    padding: 5px 10px;
+    box-shadow: 2px 2px 5px;
+    border: 0;
+    border-radius: 5px;
+    margin: 7px 10px;
+}
+.buttonB:hover{
+    color: white;
+    background-color: rgb(61, 61, 61);
 }

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>To do list</title>
   </head>
   <body>
@@ -17,14 +18,16 @@
         <ol id="lista-tarefas"></ol>
     </section>
     <section id="buttons-container">
-        <button id="salvar-tarefas">Save tasks</button>
-        <br>
-        <button id="apaga-tudo">Clear task list</button>
-        <button id="remover-selecionado">Remove selected task</button>
-        <button id="remover-finalizados">Clear completed tasks</button>
-        <br>
-        <button id="mover-cima">Move up</button>
-        <button id="mover-baixo">move down</button>
+      <div class="buttons-A">
+        <button id="mover-cima" class="buttonA">Move up &#9652</button>
+        <button id="salvar-tarefas" class="buttonA">Save tasks &#9745</button>
+        <button id="mover-baixo" class="buttonA">Move down &#9662</button>
+      </div>
+      <div class="buttons-B">
+        <button id="apaga-tudo" class="buttonB">Clear task list</button>
+        <button id="remover-selecionado" class="buttonB">Remove selected task</button>
+        <button id="remover-finalizados" class="buttonB">Clear completed tasks</button>
+      </div>
     </section>
 
     <script src="script.js"></script>

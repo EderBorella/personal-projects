@@ -25,8 +25,13 @@ tasks.addEventListener('click', (event) => {
     tasks.children[i].classList.remove('selected');
   }
 
-  event.target.style.background = 'gray';
-  event.target.classList.add('selected');
+  if (event.target.classList.contains('selected')) {
+    event.target.classList.remove('selected')
+    event.target.style.background = '';
+  }else{
+    event.target.classList.add('selected');
+    event.target.style.background = 'gray';
+  };
 });
 
 tasks.addEventListener('dblclick', (event) => {
